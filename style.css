@@ -41,3 +41,13 @@ footer > p:last-child{
     margin-bottom:8px;
 }
 
+/* TODO: lave så når man er inde på en underside vil man med CSS vise brugeren man er i Mode med f.eks. underline eller andet ændre farve */
+
+a:hover{
+text-decoration: underline;
+}
+
+a:active{
+color:blue;
+}
+
