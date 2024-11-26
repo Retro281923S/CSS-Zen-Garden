@@ -1,1 +1,42 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display:inline;
+}
+
+/* fjerner stregen til links ved headeren øverst og laver teksten til sort farve.*/ 
+a:link{
+text-decoration: none;
+color:black;
+}
+
+/* denne kode sætter en header øverst og giver plads imellem teksten samt at gøre teksten større */ 
+.navigation{
+margin: 0.5 rem 0;
+text-align: center;
+font-size: 25px;
+}
+
+
+.header{
+    text-align: center;
+}
+
+.footer1{
+    flex-grow: 0;
+    text-align: center;
+    background-color: #325050;
+}
+
+.footer1 > p{
+    margin:2px;
+}
+
+footer > p:last-child{
+    margin-bottom:8px;
+}
 
