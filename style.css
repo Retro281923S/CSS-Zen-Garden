@@ -1,9 +1,10 @@
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
-  
+  /* gør så navigationen er horizontal */
   li {
     display:inline;
 }
@@ -21,11 +22,11 @@ text-align: center;
 font-size: 25px;
 }
 
-
+/* sætter header teksten til midten */
 .header{
     text-align: center;
 }
-
+/* sætter teksten til footeren til midten af siden og sætter baggrunds farve */
 .footer1{
     flex-grow: 0;
     text-align: center;
