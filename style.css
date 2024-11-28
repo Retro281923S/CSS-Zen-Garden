@@ -28,10 +28,11 @@ color:black;
     padding: 9px;
 }
 
+/* giver farve til footer nederst er 4 px størt. */
 .navigation .active {
-    border-bottom: 4px solid rgba(0, 0, 200, .5);
+    border-bottom: 4px solid rgba(0, 0, 200, .5); 
 }
- 
+ /* centrere headeren og gør dens tekst større */
 .header{
     text-align: center;
     font-size: 4vw;
@@ -75,34 +76,32 @@ a:active{
     flex-grow:1;
 }
 
+/* :root gør at alt styling som bliver skrevet under det vil gøre alt på hjemmesiden har f.eks. samme font størrelse. */
 :root {
     font-size: 1.5vw;
     --nav-bar-color: #65a1a1;
 }
 
-@media screen 
-  and (max-width: 1300px) {
+/* media queries til store computer skærme og font også til større skærme*/
+@media screen and (max-width: 1300px) {
     :root {
         font-size:2vw;
     } 
 }
-/* media queries som gøre teksten og skærm størelsen er tilpasset til computer  */
-@media screen 
-  and (max-width: 1000px) {
+/* media queries som gøre teksten og skærm størelsen er tilpasset til computer */
+@media screen and (max-width: 1000px) {
     :root {
         font-size:2.5vw;
     } 
 }
 /* media queries som gøre teksten og skærm størelsen er tilpasset til tablet/medium størelse skærme */
-@media screen 
-  and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     :root {
         font-size:4vw;
     } 
 }
 /* media queries som gøre teksten og skærm størelsen tilpasset til mobil */
-@media screen 
-  and (max-width: 400px) {
+@media screen and (max-width: 400px) {
     :root {
         font-size:6vw;
     } 
