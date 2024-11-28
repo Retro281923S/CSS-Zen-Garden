@@ -1,4 +1,7 @@
-/* TODO: sætte ny typografi som passer til hjemmesidens stil*/
+/* sætter en ny font til hele hjemmesiden som er Segoe UI */
+body{
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
 
 ul {
     list-style-type:none;
@@ -16,23 +19,30 @@ text-decoration: none;
 color:black;
 }
 
-/* denne kode sætter en header øverst og giver plads imellem teksten samt at gøre teksten større */ 
+/* denne kode sætter en header øverst og giver plads imellem teksten samt at gøre teksten større og sætter en border rundt om navagtion */ 
 .navigation{
-margin: 0.5 rem 0;
-text-align: center;
-font-size: 25px;
+    margin: 0.5 rem 0;
+    text-align: center;
+    font-size: 25px;
+    border: 6px solid #65a1a1;
+    padding: 9px;
 }
 
+.navigation .active {
+    border-bottom: 4px solid rgba(0, 0, 200, .5);
+}
+ 
 .header{
-text-align: center;
+    text-align: center;
+    font-size: 4vw;
 }
 
-    /* TODO: lave så når man er inde på en underside vil man med CSS vise brugeren man er i Mode med f.eks. underline eller andet ændre farve */
 
 .footer1{
     flex-grow: 0;
     text-align: center;
-    background-color: #325050;
+    background-color: var(--nav-bar-color);
+
 }
 
 .footer1 > p{
@@ -43,65 +53,58 @@ footer > p:last-child{
     margin-bottom:8px;
 }
 
-/* TODO: lave så når man er inde på en underside vil man med CSS vise brugeren man er i Mode med f.eks. underline eller andet ændre farve */
-
+/* når man sætter sin cursor over links på siden vil der komme ind streg under */
 a:hover{
-text-decoration: underline;
+    text-decoration: underline;
 }
 
+/* når man clicker på links så er bliver teksten til linket blå så brugeren ved man kommer ind på den underside f.eks. */
 a:active{
-color:blue;
+    color:blue;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  /* gør så navigationen er horizontal */
-  li {
-    display:inline;
+.menu{
+    display:flex;
+    align-items: center;
 }
 
-/* fjerner stregen til links ved headeren øverst og laver teksten til sort farve.*/ 
-a:link{
-text-decoration: none;
-color:black;
+.menu > img{
+    width: 10vw; 
 }
 
-/* denne kode sætter en header øverst og giver plads imellem teksten samt at gøre teksten større */ 
-.navigation{
-margin: 0.5 rem 0;
-text-align: center;
-font-size: 25px;
+.menu > h1{
+    flex-grow:1;
 }
 
-/* sætter header teksten til midten */
-.header{
-    text-align: center;
-}
-/* sætter teksten til footeren til midten af siden og sætter baggrunds farve */
-.footer1{
-    flex-grow: 0;
-    text-align: center;
-    background-color: #325050;
+:root {
+    font-size: 1.5vw;
+    --nav-bar-color: #65a1a1;
 }
 
-.footer1 > p{
-    margin:2px;
+@media screen 
+  and (max-width: 1300px) {
+    :root {
+        font-size:2vw;
+    } 
 }
-
-footer > p:last-child{
-    margin-bottom:8px;
+/* media queries som gøre teksten og skærm størelsen er tilpasset til computer  */
+@media screen 
+  and (max-width: 1000px) {
+    :root {
+        font-size:2.5vw;
+    } 
 }
-
-/* TODO: lave så når man er inde på en underside vil man med CSS vise brugeren man er i Mode med f.eks. underline eller andet ændre farve */
-
-a:hover{
-text-decoration: underline;
+/* media queries som gøre teksten og skærm størelsen er tilpasset til tablet/medium størelse skærme */
+@media screen 
+  and (max-width: 600px) {
+    :root {
+        font-size:4vw;
+    } 
 }
-
-a:active{
-color:blue;
+/* media queries som gøre teksten og skærm størelsen tilpasset til mobil */
+@media screen 
+  and (max-width: 400px) {
+    :root {
+        font-size:6vw;
+    } 
 }
-
