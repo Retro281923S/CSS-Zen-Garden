@@ -6,6 +6,8 @@ This repository contains the source code and assets for the Web Design Exam Proj
 
 Table of Contents
 
+Overview
+
 Project Description
 
 Features
@@ -88,10 +90,16 @@ If you have suggestions or improvements for the project, feel free to fork the r
 
 Fork the project
 
-Create your feature branch (git checkout -b feature/AmazingFeature)
+Create your feature branch:
 
-Commit your changes (git commit -m 'Add some AmazingFeature')
+git checkout -b feature/AmazingFeature
 
-Push to the branch (git push origin feature/AmazingFeature)
+Commit your changes:
+
+git commit -m 'Add some AmazingFeature'
+
+Push to the branch:
+
+git push origin feature/AmazingFeature
 
 Open a pull request
